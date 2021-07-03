@@ -1,12 +1,10 @@
 import styles from './styles.module.scss';
 
-import Image from 'next/image';
-
 export function Player() {
   return (
     <div className={styles.playerContainer}>
       <header>
-        <Image src="/playing.svg" alt="Playing now" width="32" height="32"/>
+        <img src="/playing.svg" alt="Playing now"/>
         <strong>Playing now</strong>
       </header>
       <div className={styles.emptyPlayer}>
@@ -24,19 +22,19 @@ export function Player() {
 
         <div className={styles.buttons}>
           <button type="button">
-            <Image src="/shuffle.svg" alt="Shuffle" width="24" height="24"/>
+            <img src="/shuffle.svg" alt="Shuffle"/>
           </button>
           <button type="button">
-            <Image src="/play-previous.svg" alt="Play previous" width="24" height="24"/>
+            <img src="/play-previous.svg" alt="Play previous"/>
           </button>
           <button type="button" className={styles.playButton}>
-            <Image src="/play.svg" alt="Play" width="24" height="24"/>
+            <img src="/play.svg" alt="Play"/>
           </button>
           <button type="button">
-            <Image src="/play-next.svg" alt="Play next" width="24" height="24"/>
+            <img src="/play-next.svg" alt="Play next"/>
           </button>
           <button type="button">
-            <Image src="/repeat.svg" alt="Repeat" width="24" height="24"/>
+            <img src="/repeat.svg" alt="Repeat"/>
           </button>
         </div>
       </footer>
